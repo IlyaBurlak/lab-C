@@ -1,0 +1,23 @@
+/Applications/CLion.app/Contents/bin/cmake/mac/bin/cmake -DCMAKE_BUILD_TYPE=Debug -DCMAKE_MAKE_PROGRAM=/Applications/CLion.app/Contents/bin/ninja/mac/ninja -G Ninja -S /Users/ilaburlak/Desktop/LAB_C++/LAB_2 -B /Users/ilaburlak/Desktop/LAB_C++/LAB_2/cmake-build-debug
+-- Configuring done
+CMake Error at CMakeLists.txt:6 (add_executable):
+  Cannot find source file:
+
+    App.cpp
+
+
+CMake Error at CMakeLists.txt:7 (add_executable):
+  Cannot find source file:
+
+    LAB2/App.cpp
+
+
+CMake Error at CMakeLists.txt:6 (add_executable):
+  No SOURCES given to target: LAb_2
+
+
+CMake Error at CMakeLists.txt:7 (add_executable):
+  No SOURCES given to target: 2-app
+
+
+CMake Generate step failed.  Build files cannot be regenerated correctly.
