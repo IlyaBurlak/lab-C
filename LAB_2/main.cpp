@@ -1,12 +1,16 @@
 #include <iostream>
-#include "main.h"
-#include "Include/Service/App.h"
-#include "Include/Service/Menu.h"
 #include <fstream>
+#include "consoleService.cpp"
 
 using namespace std;
 
-int main(){
-    //(new File) -> start();
-    return Service::App::create(new Service::Menu())->start();
+int main(int argc, char *argv[]){
+    if (argc == 0){
+        (new ConsoleService())->run();
+    }
+    else if (argc == 1){
+        std::string filename = argv[0];
+        (new ConsoleService(filename))->run();
+    }
+    return 0;
 }
