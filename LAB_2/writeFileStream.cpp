@@ -18,15 +18,15 @@ bool WriteFileStream::isFileOpened() {
 }
 
 void WriteFileStream::write(std::string str) {
-    file << str << "\n";
+    file << str;
 }
 
 void WriteFileStream::write(int number) {
-    file << number << "\n";
+    file << number;
 }
 
 void WriteFileStream::write(float number) {
-    file << number << "\n";
+    file << number;
 }
 
 void WriteFileStream::setName(std::string fileName){
