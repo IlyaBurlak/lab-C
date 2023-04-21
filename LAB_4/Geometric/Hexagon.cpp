@@ -3,16 +3,17 @@
 //
 
 #include "Hexagon.h"
-
+#include "Common.h"
+#include "math.h"
 using namespace std;
 
 float Hexagon::Square() {
-    square_Hexagon = ((3 * sqrt(3)) / 2 * pow(a, 2));
+   float square_Hexagon = ((3 * sqrt(3)) / 2 * pow(a, 2));
     return square_Hexagon ;
 }
 
-    float perimetr() {
-        per_Hexagon = a_Hexagon * 6;
+    float Hexagon::perimetr() {
+       float per_Hexagon = a_Hexagon * 6;
         return per_Hexagon;
     }
 
