@@ -7,13 +7,20 @@
 
 
 class Common {
+private:
+    int action;
+    int a_triangle , a_Hexagon;
 public:
+    void common_square();
+    void common_per();
+    void newFig();
+    void run();
     void menu();
     void line();
     void start();
     void input_triangle();
     void input_Hexagon();
-
+    void getActoin();
 };
 
 

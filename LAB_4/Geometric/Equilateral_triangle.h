@@ -7,7 +7,11 @@
 
 
 class Equilateral_triangle {
-
+private:
+    int a_triangle;
+public:
+    float Square();
+    float perimeter();
 
 };
 

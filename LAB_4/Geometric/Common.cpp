@@ -4,8 +4,32 @@
 #include <cmath>
 #include <iostream>
 #include "Common.h"
+#include "Equilateral_triangle.h"
+#include "Hexagon.h"
 
 using namespace std;
+
+void Common::run() {
+    bool hasNextAction = true;
+    while (hasNextAction) {
+        try {
+            start();
+            hasNextAction = start();
+        }
+        catch (const std::exception& e) {
+            std::cout << "Error while processing user action\n" << e.what();
+        }
+    }
+};
+
+void Common::input_triangle(){
+    cin >> a_triangle;
+};
+void Common::input_Hexagon(){
+    cin >> a_Hexagon;
+};
+
+
 void Common::menu(){
 
     cout << " 1 - Суммарная площадь всех фигур."<< endl;
@@ -16,21 +40,37 @@ void Common::line(){
     cout << "--------------------------------\n" ;
 }
 
+void Common::common_square(){
+    Equilateral_triangle x;
+    Hexagon y;
+    float common_square = x.Square() + y.Square();
+    return common_square;
+}
+
+void Common::common_per(){
+    Equilateral_triangle x;
+    Hexagon y;
+    float common_per = x.perimeter() + y.perimetr();
+    return comon_per;
+}
+
+
+void Common::getActoin(){
+    cin >> action;
+}
 void Common::start() {
-    Geometric_fig x;
     bool While = true;
     while (While) {
         menu();
-        cin >> a;
-        switch (a) {
+        switch (action) {
             case 1:
                 line();
-                x.common_square();
+                common_square();
                 line();
                 break;
             case 2:
                 line();
-                x.common_per();
+                common_per();
                 line();
                 break;
             case 0:
@@ -48,13 +88,4 @@ void Common::start() {
         }
     }
 }
-int a_triangle , a_Hexagon;
-void Common::input_triangle(){
-    cout << "Введите сторону треугольника ";
-    cin >> a_triangle;
-};
-void Common::input_Hexagon(){
-    cout << "Введите сторону Шестиугольника";
-    cin >> a_Hexagon;
 
-};

@@ -3,12 +3,13 @@
 //
 
 #include "Equilateral_triangle.h"
-#include ""
-float Square(){
-    square_tringl =  a_triangle * a_triangle * sqrt(3)/4;
+#include "Common.cpp"
+#include "Equilateral_triangle.h"
+float Equilateral_triangle::Square(){
+    float square_tringl =  a_triangle * a_triangle * sqrt(3)/4;
     return square_tringl;
 };
-float perimeter(){
-    per_tingle = pow(a_triangle , 3);
+float Equilateral_triangle::perimeter(){
+    float per_tingle = pow(a_triangle , 3);
     return per_tingle;
 };
