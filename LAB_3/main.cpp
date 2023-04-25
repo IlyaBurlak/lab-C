@@ -7,7 +7,7 @@
 #include "Service/App.cpp"
 using namespace std;
 
-//int main() {
-//    start();
-//    return 0;
-//}
+int main() {
+    start();
+    return 0;
+}
