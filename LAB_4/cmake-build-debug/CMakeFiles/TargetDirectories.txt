@@ -1,2 +1,0 @@
-/Users/ilaburlak/Desktop/New Lab on C/LAB_4/cmake-build-debug/CMakeFiles/edit_cache.dir
-/Users/ilaburlak/Desktop/New Lab on C/LAB_4/cmake-build-debug/CMakeFiles/rebuild_cache.dir
