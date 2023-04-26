@@ -11,7 +11,7 @@ float Hexagon::Square() {
     return square_Hexagon ;
 }
 
-    float perimetr() {
+    float Hexagon::perimetr() {
         per_Hexagon = a_Hexagon * 6;
         return per_Hexagon;
     }

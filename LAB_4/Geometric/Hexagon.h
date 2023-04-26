@@ -7,6 +7,9 @@
 
 
 class Hexagon {
+public:
+    float Square();
+    float perimetr();
 
 };
 
