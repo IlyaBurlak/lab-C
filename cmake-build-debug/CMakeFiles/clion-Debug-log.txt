@@ -1,1 +1,0 @@
-CMakeLists.txt not found in /Users/ilaburlak/Desktop/New Lab on C Select CMakeLists.txt
