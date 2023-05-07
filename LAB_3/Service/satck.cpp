@@ -8,14 +8,16 @@ using namespace std;
     int depth = 0;
     int max_depth;
     struct Node *top = nullptr;
-    Stack(int n) {
+    Stack(int n);
+
+    int Stack(int n) {
         max_depth = n;
-    }
-    void Stack::push(int element) {
-        if (depth == max_depth) {
-            cout << "Max stack depth reached" << '\n';
-            return;
-        }
+}
+
+    exception Stack::push(int element) {
+        if (depth == max_depth)
+            exception();
+
         depth++;
         Node *temp = (Node *) operator new(sizeof(Node));
         temp->data = element;
