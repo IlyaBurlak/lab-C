@@ -16,7 +16,7 @@ using namespace std;
 
     exception Stack::push(int element) {
         if (depth == max_depth)
-            exception();
+            throw exception();
 
         depth++;
         Node *temp = (Node *) operator new(sizeof(Node));
