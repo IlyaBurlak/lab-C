@@ -156,8 +156,16 @@ public:
         return m_capacity;
     }
 
-
 };
+template<typename T>
+typename std::iterator<std::random_access_iterator_tag, T>::pointer CircularBuffer <T>::begin() {
+    return (CircularBuffer + start);
+}
+
+template<typename T>
+typename std::iterator<std::random_access_iterator_tag, T>::pointer CircularBuffer<T>::end() {
+    return (CircularBuffer + size());
+}
 
 
 #endif //LAB_3_CIRCULARBUFFER_H

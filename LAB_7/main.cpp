@@ -6,7 +6,7 @@ int main() {
     buffer.push_back(2);
     buffer.push_front(0);
 
-    std::sort(buffer);
+    std::sort(buffer.begin(),buffer.end());
 
 
     for (size_t i = 0; i < buffer.size(); ++i) {
